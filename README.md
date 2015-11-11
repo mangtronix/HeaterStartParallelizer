@@ -15,3 +15,16 @@ Add to Cura as a plugin:
 3. Click on "Open plugin location"
 4. Drag HeaterStartParallelizer.py into plugin location (or copy to ~/.cura/plugins for OSX)
 5. Restart Cura
+
+Use with Simplify3D:
+
+1. Open Simplify3D
+2. Click Processes -> Edit Process Settings
+3. Click Show Advanced (if not already showing)
+4. Go to Scripts
+5. Enter the following into Post Processing -> Additional terminal commands for post processing
+```python (full path to download directory)/HeaterStartParallelizer.py "[output_filepath]"```
+
+  For example, on my system (OSX):
+  ```python /Users/mangtronix/Dropbox/src/HeaterStartParallelizer/HeaterStartParallelizer.py "[output_filepath]"```
+

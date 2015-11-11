@@ -5,6 +5,23 @@
 #Param: startExtruderOffset(float:0) Temp offset (C)
 
 import re
+import sys
+
+# Adjust this as described in the README if not using Cura
+nonCuraExtruderOffset = 20
+
+# Cura defines the filename variable, whereas Simplify3D passes it as
+# command-line argument.
+try:
+	filename # Throws an exception if the variable is not set
+except:
+	filename = sys.argv[1]
+
+try:
+	startExtruderOffset
+except:
+	# Not using Cura
+	startExtruderOffset = nonCuraExtruderOffset
 
 bedTargetTemp = 0
 extruderTargetTemp = 0
