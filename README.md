@@ -23,9 +23,9 @@ Use with Simplify3D:
 3. Click Show Advanced (if not already showing)
 4. Go to Scripts
 5. Enter the following into Post Processing -> Additional terminal commands for post processing
-```python (script path)/HeaterStartParallelizer.py "[output_filepath]"```
+```python {script path}/HeaterStartParallelizer.py "[output_filepath] {temperature offset}"```
 
-  For example, on my system (OSX):
+  For example, on my system (OSX) with a 15 degree temperature offset:
 
-  ```python /Users/mangtronix/Dropbox/src/HeaterStartParallelizer/HeaterStartParallelizer.py "[output_filepath]"```
+  ```python /Users/mangtronix/Dropbox/src/HeaterStartParallelizer/HeaterStartParallelizer.py "[output_filepath] 15"```
 

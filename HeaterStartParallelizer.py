@@ -7,9 +7,6 @@
 import re
 import sys
 
-# Adjust this as described in the README if not using Cura
-nonCuraExtruderOffset = 20
-
 # Cura defines the filename variable, whereas Simplify3D passes it as
 # command-line argument.
 try:
@@ -21,7 +18,7 @@ try:
 	startExtruderOffset
 except:
 	# Not using Cura
-	startExtruderOffset = nonCuraExtruderOffset
+	startExtruderOffset = sys.argv[2]
 
 bedTargetTemp = 0
 extruderTargetTemp = 0
