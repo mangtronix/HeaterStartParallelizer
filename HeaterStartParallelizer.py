@@ -18,7 +18,7 @@ try:
 	startExtruderOffset
 except:
 	# Not using Cura
-	startExtruderOffset = sys.argv[2]
+	startExtruderOffset = float(sys.argv[2])
 
 bedTargetTemp = 0
 extruderTargetTemp = 0
